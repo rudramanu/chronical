@@ -108,6 +108,11 @@ def get_orders():
 
 @app.route("/exit", methods=["POST"])
 def exit_app():
+    menu_collection = mongo.db.flaskdatabase
+    menu_collection.delete_many({})
+
+    order_collection = mongo.db.orders
+    order_collection.delete_many({})
     return jsonify({"message": "Application closed."}), 200
 # ==============web socket code for chat====================
 
