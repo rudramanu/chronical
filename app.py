@@ -120,7 +120,9 @@ def exit_app():
 def handle_message(message):
     chat_responses = {
         "1": "Our operation hours are from 9:00 AM to 10:00 PM.",
+        "What are your operation hours?": "Our operation hours are from 9:00 AM to 10:00 PM.",
         "2": "Please provide your order ID, and I'll check the status for you.",
+        "What is the status of my order?": "Please provide your order ID, and I'll check the status for you.",
         "Thank you":"Thank you, Please visit again",
         "Thanks":"Thank you, Please visit again",
         "thank you":"Thank you, Please visit again",
